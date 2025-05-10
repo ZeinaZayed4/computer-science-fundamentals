@@ -16,6 +16,6 @@
 
 ## 6- Networking.
 
-## 7- System Anlysis ans Design.
+## 7- System Anlysis and Design.
 
 ## 8- Software Engineering.
