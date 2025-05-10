@@ -1,4 +1,4 @@
-# Computer-Science-Fundamentals (From CATReloaded)
+# Computer Science Fundamentals (From CATReloaded)
 
 - Self-study.
 
