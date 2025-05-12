@@ -1,0 +1,16 @@
+D:\FCIS\Basics New\2- OOP\fields_constants\bin\Debug\net5.0\fields_constants.exe
+D:\FCIS\Basics New\2- OOP\fields_constants\bin\Debug\net5.0\fields_constants.deps.json
+D:\FCIS\Basics New\2- OOP\fields_constants\bin\Debug\net5.0\fields_constants.runtimeconfig.json
+D:\FCIS\Basics New\2- OOP\fields_constants\bin\Debug\net5.0\fields_constants.runtimeconfig.dev.json
+D:\FCIS\Basics New\2- OOP\fields_constants\bin\Debug\net5.0\fields_constants.dll
+D:\FCIS\Basics New\2- OOP\fields_constants\bin\Debug\net5.0\ref\fields_constants.dll
+D:\FCIS\Basics New\2- OOP\fields_constants\bin\Debug\net5.0\fields_constants.pdb
+D:\FCIS\Basics New\2- OOP\fields_constants\obj\Debug\net5.0\fields_constants.csproj.AssemblyReference.cache
+D:\FCIS\Basics New\2- OOP\fields_constants\obj\Debug\net5.0\fields_constants.GeneratedMSBuildEditorConfig.editorconfig
+D:\FCIS\Basics New\2- OOP\fields_constants\obj\Debug\net5.0\fields_constants.AssemblyInfoInputs.cache
+D:\FCIS\Basics New\2- OOP\fields_constants\obj\Debug\net5.0\fields_constants.AssemblyInfo.cs
+D:\FCIS\Basics New\2- OOP\fields_constants\obj\Debug\net5.0\fields_constants.csproj.CoreCompileInputs.cache
+D:\FCIS\Basics New\2- OOP\fields_constants\obj\Debug\net5.0\fields_constants.dll
+D:\FCIS\Basics New\2- OOP\fields_constants\obj\Debug\net5.0\ref\fields_constants.dll
+D:\FCIS\Basics New\2- OOP\fields_constants\obj\Debug\net5.0\fields_constants.pdb
+D:\FCIS\Basics New\2- OOP\fields_constants\obj\Debug\net5.0\fields_constants.genruntimeconfig.cache
