@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FCIS\\Basics New\\2- OOP\\OOP\\OOP.csproj": {}
+    "D:\\FCIS\\GitHub\\Basics New\\2- OOP\\02- Methods\\OOP\\OOP.csproj": {}
   },
   "projects": {
-    "D:\\FCIS\\Basics New\\2- OOP\\OOP\\OOP.csproj": {
+    "D:\\FCIS\\GitHub\\Basics New\\2- OOP\\02- Methods\\OOP\\OOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FCIS\\Basics New\\2- OOP\\OOP\\OOP.csproj",
+        "projectUniqueName": "D:\\FCIS\\GitHub\\Basics New\\2- OOP\\02- Methods\\OOP\\OOP.csproj",
         "projectName": "OOP",
-        "projectPath": "D:\\FCIS\\Basics New\\2- OOP\\OOP\\OOP.csproj",
+        "projectPath": "D:\\FCIS\\GitHub\\Basics New\\2- OOP\\02- Methods\\OOP\\OOP.csproj",
         "packagesPath": "C:\\Users\\laptop\\.nuget\\packages\\",
-        "outputPath": "D:\\FCIS\\Basics New\\2- OOP\\OOP\\obj\\",
+        "outputPath": "D:\\FCIS\\GitHub\\Basics New\\2- OOP\\02- Methods\\OOP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\laptop\\AppData\\Roaming\\NuGet\\NuGet.Config"

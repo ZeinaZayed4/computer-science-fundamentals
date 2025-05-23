@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FCIS\\Basics New\\2- OOP\\fields_constants\\fields_constants.csproj",
+      "projectUniqueName": "D:\\FCIS\\GitHub\\Basics New\\2- OOP\\01- Fields & Constants\\fields_constants\\fields_constants.csproj",
       "projectName": "fields_constants",
-      "projectPath": "D:\\FCIS\\Basics New\\2- OOP\\fields_constants\\fields_constants.csproj",
+      "projectPath": "D:\\FCIS\\GitHub\\Basics New\\2- OOP\\01- Fields & Constants\\fields_constants\\fields_constants.csproj",
       "packagesPath": "C:\\Users\\laptop\\.nuget\\packages\\",
-      "outputPath": "D:\\FCIS\\Basics New\\2- OOP\\fields_constants\\obj\\",
+      "outputPath": "D:\\FCIS\\GitHub\\Basics New\\2- OOP\\01- Fields & Constants\\fields_constants\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\laptop\\AppData\\Roaming\\NuGet\\NuGet.Config"

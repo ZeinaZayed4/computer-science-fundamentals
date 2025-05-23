@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = fields_constants
-build_property.ProjectDir = D:\FCIS\Basics New\2- OOP\fields_constants\
+build_property.ProjectDir = D:\FCIS\GitHub\Basics New\2- OOP\01- Fields & Constants\fields_constants\
