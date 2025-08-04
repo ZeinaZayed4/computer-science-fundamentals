@@ -1,0 +1,28 @@
+# Tree
+
+- A tree is a non-linear, hierarchical data structure consisting of nodes connected by edges, where there's exactly one path between any two nodes.
+- **Node:**
+  - The fundamental units of a tree, each containing a value or data and potentially references to other nodes.
+- **Edges:**
+  - The links or connections between nodes, representing the relationships between them.
+- **Root:**
+  - The topmost node in a tree, which has no parent.
+  - There's only one root in a tree.
+- **Parent:**
+  - A node that has one or more child nodes connected to it.
+- **Child:**
+  - A node connected to a parent node, located at a lower level in the hierarchy.
+- **Leaf (or external node):**
+  - A node that doesn't have any child nodes.
+- **Internal Node:**
+  - A node that has at least one child node.
+- **Subtree:**
+  - A portion of a tree that itself forms a tree, consisting of a node and all its descendants.
+- **Path:**
+  - A sequence of nodes and edges from one node to another.
+- **Depth of a Node:**
+  - The number of edges from the root node to that specific node.
+- **Height of a Node:**
+  - The number of edges from the node to the deepest leaf in its subtree.
+- **Height of a Tree:**
+  - The height of the root node.
