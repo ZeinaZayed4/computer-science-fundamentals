@@ -234,3 +234,96 @@
         return 0;
     }
     ```
+---
+- Number of unique numbers in an array
+  ```c++
+  #include <iostream>
+  #include <algorithm>
+  
+  using namespace std;
+  
+  const int N = 1e5 + 5;
+  int A[N];
+  
+  int main() {
+      int n;
+      cin >> n;
+  
+      for (int i = 0; i < n; ++i) {
+          cin >> A[i];
+      }
+  
+      sort(A, A + n);
+      int newSize = unique(A, A + n) - A;
+  
+      for (int i = 0; i < newSize; ++i) {
+          cout << A[i] << ' ';
+      }
+  
+      return 0;
+  }
+  ```
+---
+- reverse()
+  ```c++
+  #include <iostream>
+  #include <algorithm>
+  
+  using namespace std;
+  
+  const int N = 1e5 + 5;
+  int A[N];
+  
+  int main() {
+      int n;
+      cin >> n;
+  
+      for (int i = 0; i < n; ++i) {
+          cin >> A[i];
+      }
+  
+      sort(A, A + n);
+      int newSize = unique(A, A + n) - A;
+  
+      reverse(A, A + newSize);
+  
+      for (int i = 0; i < newSize; ++i) {
+          cout << A[i] << ' ';
+      }
+  
+      return 0;
+  }
+  ```
+---
+- sort() with three parameters
+  ```c++
+  #include <iostream>
+  #include <algorithm>
+  
+  using namespace std;
+  
+  const int N = 1e5 + 5;
+  int A[N];
+  
+  // Odd before even
+  bool myComparator(int a, int b) {
+      return (a % 2 == b % 2 || (a % 2 != 0 && b % 2 == 0));
+  }
+  
+  int main() {
+      int n;
+      cin >> n;
+  
+      for (int i = 0; i < n; ++i) {
+          cin >> A[i];
+      }
+  
+      sort(A, A + n, myComparator);
+  
+      for (int i = 0; i < n; ++i) {
+          cout << A[i] << ' ';
+      }
+  
+      return 0;
+  }
+  ```
