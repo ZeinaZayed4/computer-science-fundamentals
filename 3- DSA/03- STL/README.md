@@ -138,3 +138,204 @@
         return 0;
     }
     ```
+---
+- `Deque`:
+    ```c++
+    #include <iostream>
+    #include <deque>
+  
+    using namespace std;
+  
+    int q, n;
+    string command;
+    bool isReversed;
+    deque<int> dq;
+  
+    int main () {
+        cin >> q;
+  
+        while (q--) { // O(q)
+            cin >> command;
+  
+            if (command == "back") { // O(1)
+                if (dq.empty()) {
+                    cout << "No job fo Ada?\n";
+                } else {
+                    if (isReversed) {
+                        cout << dq.front() << '\n';
+                        dq.pop_front();
+                    } else {
+                        cout << dq.back() << '\n';
+                        dq.pop_back();
+                    }
+                }
+            } else if (command == "front") { // O(1)
+                if (dq.empty()) {
+                    cout << "No job fo Ada?\n";
+                } else {
+                    if (isReversed) {
+                        cout << dq.back() << '\n';
+                        dq.pop_back();
+                    } else {
+                        cout << dq.front() << '\n';
+                        dq.pop_front();
+                    }
+                }
+            } else if (command == "reverse") { // O(1)
+                isReversed = !isReversed;
+            } else if (command == "push_back") { // O(1)
+                cin >> n;
+  
+                if (isReversed) {
+                    dq.push_front(n);
+                } else {
+                    dq.push_back(n);
+                }
+            } else { // O(1)
+                cin >> n;
+  
+                if (isReversed) {
+                    dq.push_back(n);
+                } else {
+                    dq.push_front(n);
+                }
+            }
+        }
+  
+        return 0;
+    }
+    ```
+---
+- `queue`:  
+    ```c++
+    #include <iostream>
+    #include <queue>
+  
+    using namespace std;
+  
+    queue<int> q;
+  
+    int main () {
+        q.push(1);
+        q.push(2);
+        q.push(3);
+  
+        while (! q.empty()) {
+            cout << q.front() << '\n';
+            q.pop();
+        }
+  
+        return 0;
+    }
+    ```
+---
+- `stack`:  
+    ```c++
+    #include <iostream>
+    #include <stack>
+  
+    using namespace std;
+  
+    stack<int> s;
+  
+    int main () {
+        s.push(1);
+        s.push(2);
+        s.push(3);
+  
+        while (! s.empty()) {
+            cout << s.top() << '\n';
+            s.pop();
+        }
+  
+        return 0;
+    }
+    ```
+---
+- **Problem:**
+    ```c++
+    #include <iostream>
+    #include <stack>
+    #include <queue>
+    
+    using namespace std;
+    
+    int n, x;
+    
+    int main () {
+        while (cin >> n, n) {
+            queue<int> q;
+            for (int i = 0; i < n; ++i) {
+                cin >> x;
+                q.push(x);
+            }
+    
+            stack<int> s;
+            int next = 1;
+    
+            while (! q.empty() || (! s.empty() && s.top() == next)) {
+                if (! q.empty() && q.front() == next) {
+                    q.pop();
+                    next++;
+                } else if (! s.empty() && s.top() == next) {
+                    s.pop();
+                    next++;
+                } else if (! q.empty()) {
+                    s.push(q.front());
+                    q.pop();
+                }
+            }
+    
+            if (next == n + 1) {
+                cout << "yes\n";
+            } else {
+                cout << "no\n";
+            }
+        }
+    
+        return 0;
+    }
+    ```
+---
+- **Problem:**
+    ```c++
+    #include <iostream>
+    #include <stack>
+    
+    using namespace std;
+    
+    string s;
+    stack<char> st;
+    
+    int main () {
+        cin >> s;
+    
+        for (char c : s) {
+            if (c == '(' || c == '[') {
+                st.push(c);
+            } else if (c == ']') {
+                if (! st.empty() && st.top() == '[') {
+                    st.pop();
+                } else {
+                    cout << "NO\n";
+                    return 0;
+                }
+            } else if (c == ')') {
+                if (! st.empty() && st.top() == '(') {
+                    st.pop();
+                } else {
+                    cout << "NO\n";
+                    return 0;
+                }
+            }
+        }
+    
+        if (st.empty()) {
+            cout << "YES\n";
+        } else {
+            cout << "NO\n";
+        }
+    
+        return 0;
+    }
+    ```
