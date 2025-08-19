@@ -339,3 +339,104 @@
         return 0;
     }
     ```
+---
+- **Parentheses Balance**
+    ```c++
+    #include <iostream>
+    #include <stack>
+    
+    using namespace std;
+    
+    int n;
+    string s;
+    
+    int main() {
+        cin >> n;
+        cin.ignore();
+    
+        for (int i = 0; i < n; ++i) {
+            getline(cin, s);
+            stack<char> st;
+            bool valid = true;
+    
+            for (char c: s) {
+                if (c == '[' || c == '(') {
+                    st.push(c);
+                } else if (!st.empty() && ((st.top() == '[' && c == ']') || (st.top() == '(' && c == ')'))) {
+                    st.pop();
+                } else {
+                    valid = false;
+                    break;
+                }
+            }
+    
+            if (valid && st.empty()) {
+                cout << "Yes\n";
+            } else {
+                cout << "No\n";
+            }
+        }
+    
+        return 0;
+    }
+    ```
+---
+- **Monotonic Queue**
+    ```c++
+    #include <iostream>
+    #include <queue>
+    
+    using namespace std;
+    
+    queue<int> q;
+    deque<int> dq;
+    
+    void push(int x) { // O(n) => amortized O(1)
+        q.push(x);
+    
+        while (!dq.empty() && dq.back() < x) {
+            dq.pop_back();
+        }
+        dq.push_back(x);
+    }
+    
+    void pop() { // O(1)
+        if (dq.front() == q.front()) {
+            dq.pop_front();
+        }
+        q.pop();
+    }
+    
+    int front() { // O(1)
+        return q.front();
+    }
+    
+    int getMax() { // O(1)
+        return dq.front();
+    }
+    
+    int t, x;
+    string command;
+    
+    int main() {
+        cin >> t;
+        while (t--) {
+            cin >> command;
+    
+            if (command == "push") {
+                cin >> x;
+                push(x);
+            } else if (command == "pop") {
+                pop();
+            } else if (command == "front") {
+                cout << front() << '\n';
+            } else if (command == "max") {
+                cout << getMax() << '\n';
+            }
+        }
+    
+        return 0;
+    }
+    ```
+---
+
