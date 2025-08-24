@@ -439,4 +439,81 @@
     }
     ```
 ---
-
+- **Priority Queue**
+    ```c++
+    #include <iostream>
+    #include <queue>
+    
+    using namespace std;
+    
+    priority_queue<int> pq;
+    
+    int main() {
+        pq.push(4);
+        pq.push(8);
+        pq.pop();
+    
+        cout << pq.top();
+    
+        return 0;
+    }
+    ```
+---
+- **set**
+    ```c++
+    #include <iostream>
+    #include <set>
+    
+    using namespace std;
+    
+    int main() {
+        set<int> st;
+        st.insert(5);
+        st.insert(15);
+        st.insert(5); // not inserted
+        st.erase(5);
+        // auto it = st.find(5);
+    
+        if (st.count(5) == 0) {
+            cout << "Not found!\n";
+        } else {
+            cout << "Found!\n";
+        }
+    
+        cout << st.size() << '\n';
+    
+        return 0;
+    }
+    ```
+---
+- **map**
+    ```c++
+    #include <iostream>
+    #include <map>
+    
+    using namespace std;
+    
+    int main() {
+        string name;
+        double salary;
+        map<string, double> mp;
+        int n;
+        cin >> n;
+    
+        for (int i = 0; i < n; ++i) {
+            cin >> name >> salary;
+            mp[name] = salary;
+        }
+        cin >> name;
+    
+        if (mp.count(name) == 0) {
+            cout << "Not found!\n";
+        } else {
+            cout << mp[name] << '\n';
+        }
+    
+        cout << "Size = " << mp.size() << '\n';
+    
+        return 0;
+    }
+    ```
